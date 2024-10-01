@@ -126,23 +126,3 @@
     --shadow-strength: 5%;
   }
 }
-@container style(--sunny: true) {
-    .weather-card {
-      background: linear-gradient(-30deg, yellow, orange);
-    }
-    
-    .weather-card:after {
-      content: url(<data-uri-for-demo-brevity>);
-      background: gold;
-    }
-  }
-  @container style(--sunny: true) and style(--cloudy: true) {
-    .weather-card {
-      background: linear-gradient(24deg, pink, violet);
-    }
-  
-  .weather-card:after {
-      content: url(<data-uri-for-demo-brevity>);
-      background: violet;
-  }
-}
